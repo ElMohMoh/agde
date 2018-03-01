@@ -46,6 +46,18 @@ public class CacheConfiguration {
             cm.createCache(com.oklm.agde.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.oklm.agde.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.oklm.agde.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.oklm.agde.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
